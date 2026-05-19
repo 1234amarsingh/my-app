@@ -289,6 +289,7 @@ const openCamera = async () => {
               </div>
             <Button type="submit" className="w-full"> Register</Button>
              <Link href="/main" className="hover:bg-transparent text-gray-600 font-medium">← Back</Link>
+             <h1>Amar singh</h1>
             </form>
           </CardContent>
         </Card>
