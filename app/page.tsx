@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import React,{ useState } from "react";
 import { useRouter } from "next/navigation";
 
 import {
@@ -43,7 +43,7 @@ export default function AdminLoginPage() {
   const [showPassword, setShowPassword] =
     useState(false);
 
-  const handleLogin = async (e) => {
+  const handleLogin = async (e:any) => {
 
     e.preventDefault();
 

@@ -696,11 +696,11 @@ H: Holiday
 
 <tr className="bg-slate-800 text-white text-[10px]">
 
-<th className="p-3 sticky left-0 bg-slate-800 border-r min-w-[80px] z-40">
+<th className="p-3 sticky left-0 bg-slate-800 border-r min-w-20 z-40">
 Enrollment
 </th>
 
-<th className="p-3 sticky left-[80px] bg-slate-800 border-r min-w-[130px] z-40 text-left">
+<th className="p-3 sticky left-20 bg-slate-800 border-r min-w-32.5 z-40 text-left">
 Student Name
 </th>
 
@@ -775,7 +775,7 @@ className="bg-white hover:bg-indigo-50/50 transition-colors group"
 {s.enrollment}
 </td>
 
-<td className="p-2 sticky left-[80px] bg-white group-hover:bg-indigo-50/40 border-r text-[10px] font-bold z-20 shadow-sm text-left">
+<td className="p-2 sticky left-20 bg-white group-hover:bg-indigo-50/40 border-r text-[10px] font-bold z-20 shadow-sm text-left">
 {s.name}
 </td>
 
@@ -865,7 +865,7 @@ className={color}
 holidayMessages[
 d.dayNum
 ]?.message && (
-<div className="text-[8px] text-blue-700 font-bold truncate max-w-[40px] mx-auto">
+<div className="text-[8px] text-blue-700 font-bold truncate max-w-10 mx-auto">
 {
 holidayMessages[
 d.dayNum

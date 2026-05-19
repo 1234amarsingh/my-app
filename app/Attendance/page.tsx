@@ -263,7 +263,7 @@ export default function AttendancePage() {
       {/* MODERN ADMIN LOGIN */}
       {showLogin && (
         <div className="fixed inset-0 bg-black/70 backdrop-blur-md flex items-center justify-center z-50">
-          <div className="w-[380px] bg-white/10 border border-white/20 rounded-3xl p-6 shadow-2xl">
+          <div className="w-95 bg-white/10 border border-white/20 rounded-3xl p-6 shadow-2xl">
             {/* HEADER */}
             <div className="text-center mb-6">
               <h2 className="text-2xl font-bold text-cyan-400">
@@ -290,7 +290,7 @@ export default function AttendancePage() {
             <div className="flex gap-3">
               <button
                 onClick={handleLogin}
-                className="flex-1 bg-gradient-to-r from-cyan-500 to-blue-600 py-3 rounded-xl font-semibold"
+                className="flex-1 bg-linear-to-r from-cyan-500 to-blue-600 py-3 rounded-xl font-semibold"
               >
                 Login
               </button>
