@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 import {
 Dialog,
 DialogContent,
@@ -17,7 +18,8 @@ DialogDescription,
 DialogFooter,
 } from "@/components/ui/dialog";
 import axios from "axios";
-export default function StudentAttendanceSheet() {
+function DashboardContent(){
+
 
 
   const searchParams = useSearchParams();   // ✅ 1st hooks
@@ -1127,4 +1129,12 @@ month: "long",
 
 </div>
 );
+}
+
+export default function StudentAttendanceSheet() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <DashboardContent />
+    </Suspense>
+  );
 }
