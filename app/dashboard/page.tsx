@@ -1,14 +1,21 @@
 "use client";
 export const dynamic="force-dynamic"
-import { useRouter } from "next/navigation";
-import React, { useEffect, useState, useMemo } from "react";
+import {
+  Suspense ,
+   useEffect ,
+   useMemo ,
+   useState ,
+  } from "react";
+  import {
+    useRouter ,
+    useSearchParams ,
+  } from "next/navigation";
 import { Calendar } from "@/components/ui/calendar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { useSearchParams } from "next/navigation";
-import { Suspense } from "react";
+// import { useSearchParams } from "next/navigation";
 import {
 Dialog,
 DialogContent,
@@ -19,9 +26,7 @@ DialogFooter,
 } from "@/components/ui/dialog";
 import axios from "axios";
 function DashboardContent(){
-
-
-
+  
   const searchParams = useSearchParams();   // ✅ 1st hooks
   const urlSearch = searchParams.get("search") || "";
 
