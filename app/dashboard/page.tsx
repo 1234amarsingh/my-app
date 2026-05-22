@@ -1,6 +1,6 @@
 "use client";
+export const dynamic="force-dynamic"
 import { useRouter } from "next/navigation";
-
 import React, { useEffect, useState, useMemo } from "react";
 import { Calendar } from "@/components/ui/calendar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
